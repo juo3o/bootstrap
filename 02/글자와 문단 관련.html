@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자와 문단관련</title>
+    <!-- CDN방식으로 css 연결하기 ( 하단에 CDN 있음 ) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CDN방식으로 js 연결하기 ( 하단에 CDN 있음 ) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>02_부트스트랩 글자와 문단관련</h2>
+    <p>부트스트랩에서는 기본 글자크기가 16px. 행높이(줄간격) 1.428이다</p>
+    <p>위 내용은 문단태그(p)요소에 자동으로 적용되며, 하단여백(margin)은 16px이 기본.</p>
+    <h1>h1 - 40px</h1>
+    <h2>h2 - 32px</h2>
+    <h3>h3 - 28px</h3>
+    <h4>h4 - 24px</h4>
+    <h5>h5 - 20px</h5>
+    <h6>h6 - 16px</h6>
+    <p>제목태그(h)요소는 margin-bottom : 8px 이 기본.</p>
+
+    <small>small - 글자를 작게 설정 - 14px</small><br>
+    <mark>mark - 글자에 배경색(부트스트랩에서는 색상이 연함) 적용 - 16px</mark><br>
+    <abbr title="dfdf">abbr - 약어나 줄임말 - 16px</abbr><br><br>
+    <blockquote class="blockquote-footer">blockquote - 인용문 - 14px / #6c757d</blockquote>
+    <dl>
+        <dt>dt - 용어제목 - 16px. 진하게</dt>
+        <dd>dd - 용어설명 - 16px</dd>
+    </dl>
+    <code>code - 문서안에서 태그를 표시. 색상이 자주색으로 변경 - 14px
+        <br>
+        let gnb = document.querySelector('.gnb');
+    </code>
+
+    <p class="text-muted">p태그에 text-muted - 텍스트의 중요도에 따라 문자색상 : 회색</p>
+    <p class="text-primary">p태그에 text-primary - 텍스트의 중요도에 따라 문자색상 : 파랑</p>
+    <p class="text-success">p태그에 text-success - 텍스트의 중요도에 따라 문자색상 : 초록</p>
+    <p class="text-info">p태그에 text-info - 텍스트의 중요도에 따라 문자색상 : 하늘</p>
+    <p class="text-warning">p태그에 text-warning - 텍스트의 중요도에 따라 문자색상 : 주황</p>
+    <p class="text-danger">p태그에 text-danger - 텍스트의 중요도에 따라 문자색상 : 빨강</p>
+    <p class="bg-info">p태그에 bg-info - 백그라운드에 배경색(text대신 bg) : 하늘</p>
+
+    <h3>문단관련 서식</h3>
+    <p class="lead">class=lead : 단락 눈에띄게 - 20px</p>
+    <p class="small">class=small : 상위문자크기보다 85% 작게 - 14px</p>
+    <p class="text-start bg-warning">class=text-start : 왼쪽정렬 - 16px</p>
+    <p class="text-end bg-warning">class=text-end : 오른쪽정렬 - 16px</p>
+    <p class="text-center bg-warning">class=text-center : 중간정렬 - 16px</p>
+    <p class="text-justify">class=text-justify : 양쪽배분정렬 - 16px</p>
+    <p class="text-nowrap">class=text-nowrap :문단 다음줄로 넘어가지 않게 - 16px</p>
+    <p class="text-uppercase">class=text-uppercase : 대문자 출력</p>
+    <p class="text-lowercase">class=text-lowercase : 소문자 출력</p>
+    <p class="text-capitalize">class=text-capitalize : 영문자 첫글자만 대문자로 출력</p>
+
+    <ul class="list-unstyled"> ul class=list-unstyled : 목록기호 제거
+        <li class="list-inline-item">목록태그(class=list-inline-item : 인라인으로 변경)</li>
+        <li>목록태그</li>
+        <li>목록태그</li>
+    </ul>
+</body>
+</html>
