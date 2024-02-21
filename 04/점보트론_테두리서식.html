@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점보트론_테두리서식</title>
+    <!-- CDN방식으로 css 연결하기 ( 하단에 CDN 있음 ) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CDN방식으로 js 연결하기 ( 하단에 CDN 있음 ) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style>
+        .wrap{display: flex; padding: 20px;}
+        .ro{width: 60px; height: 50px; background: rgb(138, 72, 72); margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <h2>점보트론_테두리서식</h2>
+    <p>특별한 내용이나 정보에 특별히 관심을 보이도록 하기위한 목적의 큰 상자(박스)</p>
+    <img src="./images/jumbotron.png" alt="">
+    <div class="container">
+        <div class="jumbotron">
+            <h3>제목</h3>
+        </div>
+        <p>설명글</p>
+    </div>
+    <p>jumbotron, page-header 서식은 버전 5이하에서 사용</p>
+    <br>
+
+    <h3>테두리</h3>
+    <p>테두리 유틸리티를 사용하여 요소의 테두리 및 테두리 변경 스타일을 빠르게 지정. 이미지, 버튼 또는 기타요소에 적합</p>
+    <div class="border">테두리적용하기</div>
+    <div class="border-top">위 테두리적용하기</div>
+    <div class="border-bottom">아래 테두리적용하기</div>
+    <div class="border-end">오른쪽 테두리적용하기</div>
+    <div class="border-start">왼쪽 테두리적용하기</div>
+
+    <div class="border border-0">테두리모두제거</div>
+    <div class="border border-top-0">위 테두리제거</div>
+    <div class="border border-bottom-0">아래 테두리제거</div>
+    <div class="border border-end-0">오른쪽 테두리제거</div>
+    <div class="border border-start-0">왼쪽 테두리제거</div>
+
+    <br>
+    <p>color 임의 속성은 부트스트랩css 파일을 다운로드하여 색상 변수값을 편집해야함</p>
+
+    
+    <p class="border border-primary"></p>
+    <p class="border border-secondary"></p>
+    <p class="border border-success"></p>
+    <p class="border border-danger"></p>
+    <p class="border border-warning"></p>
+    <p class="border border-info"></p>
+    <p class="border border-light"></p>
+    <p class="border border-dark"></p>
+    <p class="border border-white"></p>
+
+    <p>5.2버전 부터 테두리에 투명도 적용 가능</p>
+    <div class="border border-success p-2 mb-2 border-opacity-75"></div>
+
+    <p>테두리 두께 설정하기</p>
+    <p class="border border-1"></p>
+    <p class="border border-2"></p>
+    <p class="border border-3"></p>
+    <p class="border border-4"></p>
+    <p class="border border-5"></p>
+
+    <p>모서리 둥글게(방향)</p>
+    <div class="wrap">
+        <div class="ro rounded"></div>
+        <div class="ro rounded-top"></div>
+        <div class="ro rounded-end"></div>
+        <div class="ro rounded-bottom"></div>
+        <div class="ro rounded-start"></div>
+        <div class="ro rounded-circle"></div>
+        <div class="ro rounded-pill"></div>
+    </div>
+    <p>모서리값 설정하기</p>
+    <div class="wrap">
+        
+        <div class="ro rounded-0"></div>
+        <div class="ro rounded-1"></div>
+        <div class="ro rounded-2"></div>
+        <div class="ro rounded-3"></div>
+        <div class="ro rounded-4"></div>
+        <div class="ro rounded-5"></div>
+    </div>
+</body>
+</html>

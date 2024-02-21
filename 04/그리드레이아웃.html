@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 디바이스마다 가로길이 똑같이 100% 맞춤 -->
+    <title>그리드레이아웃</title>
+    <!-- CDN방식으로 css 연결하기 ( 하단에 CDN 있음 ) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CDN방식으로 js 연결하기 ( 하단에 CDN 있음 ) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style>
+        body{padding: 10px;}
+        div{background: rgb(239, 239, 155); border: 1px solid #2d2d2d;}
+    </style>
+</head>
+<body>
+    <h2>그리드레이아웃</h2>
+    <ol>반응형 레이아웃
+        <li>가변단위 (%, em, rem, vh, vw)</li>
+        <li>viewport (디바이스 화면너비에 맞게 컨텐츠를 100%로 맞춤)</li>
+        <li>mediaQuery (디바이스별 해상도에 따른 서식 CSS)</li>
+    </ol>
+    <p>부트스트랩에서 그리드 레이아웃 속성을 사용하여 반응형 그리드 레이아웃 사용 가능</p>
+    <p>부트스트랩에서는 하나의 행에 반드시 12개의 열(컬럼)을 사용해야 함</p>
+    <p>만약 12개의 컬럼을 모두 사용하지 않으려면, 더 넓은 컬럼을 만들기 위해 컬럼들을 하나의 그룹으로 만들어 사용 가능 함</p>
+    <p>*컬럼 하나당 가로 60px + 양쪽 10px = 80px</p>
+    <p>짝수 컬럼이 이상적</p>
+    <ul>
+        <li>모바일 사이즈 : 320  - 컬럼 4개 ( 4x8 = 32 )</li>
+        <li>모바일 사이즈 : 414(아이폰 XR)  - 컬럼 5개 (414/8 = 5.)</li>
+        <li>모바일 사이즈 : 430(아이폰 pro max) - 컬럼 8개 ( 430/8 = 5개) (30/2 = 15 양쪽)</li>
+        <li>PC 최소사이즈 : 1025 ~ - 컬럼 12개(매직넘버)</li>
+        <li>PC 최적사이즈 : 1200 ~ 1400 - 컬럼 14개 or 16개 *</li>
+    </ul>
+    <p>그리드 시스템에서 사용할 수 있는 디바이스 별 클래스</p>
+    <img src="./images/breakpoint.jpg" alt="">
+
+    <h3>그리드 레이아웃 적용하기 : 반응형</h3>
+    <p>class = "row" : display flex와 같음</p>
+    <p>xl : PC</p>
+    <div class="row">
+        <div class="col-xl-12">12컬럼을 한줄로 배치하기</div>
+    </div>
+    <br>
+    <p>md : 타블렛</p>
+    <div class="row">
+        <div class="col-md-4">12컬럼을 한 박스당 4컬럼씩 배치하기</div>
+        <div class="col-md-4">12컬럼을 한 박스당 4컬럼씩 배치하기</div>
+        <div class="col-md-4">12컬럼을 한 박스당 4컬럼씩 배치하기</div>
+    </div>
+    <br>
+    <p>sm : 모바일</p>
+    <div class="row">
+        <div class="col-sm-6">12컬럼을 한박스당 6컬럼씩 배치하기</div>
+        <div class="col-sm-6">12컬럼을 한박스당 6컬럼씩 배치하기</div>
+    </div>
+
+</body>
+</html>
+
+
+
