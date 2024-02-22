@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그_경고메세지와 닫기</title>
+    <!-- CDN방식으로 css 연결하기 ( 하단에 CDN 있음 ) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CDN방식으로 js 연결하기 ( 하단에 CDN 있음 ) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h2>폼태그_경고메세지와 닫기</h2>
+    <p>form, fieldset, legend 태그 사용</p>
+
+    <form name="폼이름" action="보낼주소" method="get/post">
+        <fieldset>
+            <legend>폼태그 사용하기</legend>
+            <div>
+                <label for="email">email address</label>
+                <input type="email" placeholder="id@emil.com" id="email" class="form-control">
+                <input type="submit" value="가입하기">
+            </div>
+            <p>class="form-control" : 테두리회색, 둥글게, 줄변경 적용</p>
+        </fieldset>
+    </form>
+
+    <h3>01 경고메세지</h3>
+    <p>.alert 서식 적용하여 경고메세지 나오게 하기</p>
+    <div class="alert alert-parimary" role="alert">경고창 띄우기</div>
+    <div class="alert alert-secondary" role="alert">경고창 띄우기</div>
+    <div class="alert alert-success" role="alert">경고창 띄우기</div>
+    <div class="alert alert-danger" role="alert">경고창 띄우기</div>
+    <div class="alert alert-warning" role="alert">경고창 띄우기</div>
+    <div class="alert alert-info" role="alert">경고창 띄우기</div>
+    <div class="alert alert-light" role="alert">경고창 띄우기</div>
+    <div class="alert alert-dark" role="alert">경고창 띄우기</div>
+
+    <p>경고 상자안에 있는 a태그를 같은계열색상으로 출력하는 법 : <a href="#" class="alert-link"> 추가하기</a></p>
+
+    <div class="alert alert-danger" role="alert">
+        경고창띄우기 <a href="#" class="alert-link">click!</a>
+    </div>
+
+    <div class="alert alert-success alert-dismissable">
+        <button type="button" class="btn-close" data-dimiss="alert" arial-label="close"></button>
+    </div>
+
+    <p>버튼 비활성화 disabled</p>
+    <button type="button" class="btn-close" disabled aria-label="close"></button>
+</body>
+</html>
